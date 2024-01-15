@@ -2,20 +2,24 @@
   "name": "commandline-paraphraser",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
+    "inquirer": "^9.2.12",
     "nodemon": "^3.0.2",
     "openai": "^4.24.2",
     "paraphrase": "^3.1.1"
   },
   "devDependencies": {
-    "@gradio/client": "^0.10.0"
+    "istanbul": "^0.4.5",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
   }
 }
